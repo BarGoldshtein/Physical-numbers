@@ -87,7 +87,7 @@ using namespace ariel;
         }
         PhysicalNumber &PhysicalNumber::operator++(int) 
         {
-//             PhysicalNumber q;
+           PhysicalNumber q;
 //             q.number=number+1;
 //             q.unit=unit;
            
