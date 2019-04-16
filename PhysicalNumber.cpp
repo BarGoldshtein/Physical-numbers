@@ -192,64 +192,74 @@ using namespace ariel;
         bool  PhysicalNumber::operator<=(const PhysicalNumber& pn) const
         {
              bool test=false;
-            if(unit.isSame(pn.unit))
-            {
-                if(this->number<=pn.number)
-                    return true;
-                else
-                    return false;
-            }
-            else if (unit.isSameGroup(pn.unit))
-                return number<=convert(pn).number? true : false ; // need to delete?
-            else 
-                throw "the physical numbers are not the same dimension at function < \n";
+//             if(unit.isSame(pn.unit))
+//             {
+//                 if(this->number<=pn.number)
+//                     return true;
+//                 else
+//                     return false;
+//             }
+//             else if (unit.isSameGroup(pn.unit))
+//                 return number<=convert(pn).number? true : false ; // need to delete?
+//             else 
+//                 throw "the physical numbers are not the same dimension at function < \n";
+		
+		return test;
         }
         bool  PhysicalNumber::operator>=(const PhysicalNumber& pn) const
 
         {
              bool test=false;
-            if(unit.isSame(pn.unit))
-            {
-                if(this->number>=pn.number)
-                    return true;
-                else
-                    return false;
-            }
-            else if (unit.isSameGroup(pn.unit))
-                return number>=convert(pn).number? true : false ; // need to delete?
-            else 
-                throw "the physical numbers are not the same dimension at function < \n";
+//             if(unit.isSame(pn.unit))
+//             {
+//                 if(this->number>=pn.number)
+//                     return true;
+//                 else
+//                     return false;
+//             }
+//             else if (unit.isSameGroup(pn.unit))
+//                 return number>=convert(pn).number? true : false ; // need to delete?
+//             else 
+//                 throw "the physical numbers are not the same dimension at function < \n";
+		
+		
+		return test;
               
         }
         bool  PhysicalNumber::operator==(const PhysicalNumber& pn) const
         {
             bool test=false;
-            if(unit.isSame(pn.unit))
-            {
-                if(this->number==pn.number)
-                    return true;
-                else
-                    return false;
-            }
-            else if (unit.isSameGroup(pn.unit))
-                return number==convert(pn).number? true : false ; // need to delete?
-            else 
-                throw "the physical numbers are not the same dimension at function < \n";
+//             if(unit.isSame(pn.unit))
+//             {
+//                 if(this->number==pn.number)
+//                     return true;
+//                 else
+//                     return false;
+//             }
+//             else if (unit.isSameGroup(pn.unit))
+//                 return number==convert(pn).number? true : false ; // need to delete?
+//             else 
+//                 throw "the physical numbers are not the same dimension at function < \n";
+		
+		
+		
+		return test;
         }
         bool  PhysicalNumber::operator!=(const PhysicalNumber& pn) const
         {
-                 bool test=false;
-            if(unit.isSame(pn.unit))
-            {
-                if(this->number!=pn.number)
-                    return true;
-                else
-                    return false;
-            }
-            else if (unit.isSameGroup(pn.unit))
-                return number!=convert(pn).number? true : false ; // need to delete?
-            else 
-                throw "the physical numbers are not the same dimension at function < \n";
+//                  bool test=false;
+//             if(unit.isSame(pn.unit))
+//             {
+//                 if(this->number!=pn.number)
+//                     return true;
+//                 else
+//                     return false;
+//             }
+//             else if (unit.isSameGroup(pn.unit))
+//                 return number!=convert(pn).number? true : false ; // need to delete?
+//             else 
+//                 throw "the physical numbers are not the same dimension at function < \n";
+		return test;
         }
 
 
