@@ -96,21 +96,21 @@ using namespace ariel;
         PhysicalNumber PhysicalNumber::operator-(const PhysicalNumber& pn) const
         {
             PhysicalNumber newPN; 
-            PhysicalNumber temp;
-            if(unit.ariel::Unit::isSame(pn.unit)){
-            newPN.number=this->number-pn.number;
-            newPN.unit=this->unit;
-            }
-            else if(unit.isSameGroup(pn.unit)) 
-            {
-                temp=convert(pn);
-                newPN.number=number-temp.number;
-                newPN.unit=unit;
-            }
-            else
-                throw "units are not the same dimensions in - function";
+//             PhysicalNumber temp;
+//             if(unit.ariel::Unit::isSame(pn.unit)){
+//             newPN.number=this->number-pn.number;
+//             newPN.unit=this->unit;
+//             }
+//             else if(unit.isSameGroup(pn.unit)) 
+//             {
+//                 temp=convert(pn);
+//                 newPN.number=number-temp.number;
+//                 newPN.unit=unit;
+//             }
+//             else
+//                 throw "units are not the same dimensions in - function";
             
-            return newPN; 
+          return newPN; 
         }
         PhysicalNumber& PhysicalNumber::operator-=(const PhysicalNumber& pn) 
         {
