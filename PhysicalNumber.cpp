@@ -12,48 +12,48 @@ using namespace ariel;
         PhysicalNumber::PhysicalNumber()
         {
             
-//             number = 0;
-//             unit.type = Unit::KM;
-//         }
-//         PhysicalNumber::PhysicalNumber(double number,Unit::Type type) // unit is object of Unit.h class
-//         {
-//             if (number < 0) 
-//             throw "exception at constructor, number cant be < 0";
-//             this->number=number;
-//             this->unit.type=type;
+            number = 0;
+            unit.type = Unit::KM;
+        }
+        PhysicalNumber::PhysicalNumber(double number,Unit::Type type) // unit is object of Unit.h class
+        {
+            if (number < 0) 
+            throw "exception at constructor, number cant be < 0";
+            this->number=number;
+            this->unit.type=type;
             
-//         }
-//         PhysicalNumber::~PhysicalNumber(){
+        }
+        PhysicalNumber::~PhysicalNumber(){
 
-//         }
-//         PhysicalNumber PhysicalNumber::operator+(const PhysicalNumber& pn) const
-//         {
+        }
+        PhysicalNumber PhysicalNumber::operator+(const PhysicalNumber& pn) const
+        {
           
-//           PhysicalNumber newPN; 
+          PhysicalNumber newPN; 
           
-//             if(unit.ariel::Unit::isSame(pn.unit)){
+            if(unit.ariel::Unit::isSame(pn.unit)){
                  
-//             newPN.number=this->number+pn.number;
-//             newPN.unit=this->unit;
-//             }
-//             else if(unit.isSameGroup(pn.unit)) 
-//             {
+            newPN.number=this->number+pn.number;
+            newPN.unit=this->unit;
+            }
+            else if(unit.isSameGroup(pn.unit)) 
+            {
             
-//                 newPN=convert(pn);
-//                 newPN.number+=number;
-//             }
-//             else
-//             {
-//                 Unit thisUnit=this->unit;
-//                 string type1= thisUnit.unitToString();
-//                 Unit pnUnit=pn.unit;
-//                 string type2=pnUnit.unitToString();
-//                 throw invalid_argument ("Units do not match - "+type1+" cannot be converted to "+type2);
+                newPN=convert(pn);
+                newPN.number+=number;
+            }
+            else
+            {
+                Unit thisUnit=this->unit;
+                string type1= thisUnit.unitToString();
+                Unit pnUnit=pn.unit;
+                string type2=pnUnit.unitToString();
+                throw invalid_argument ("Units do not match - "+type1+" cannot be converted to "+type2);
 
-//             }
+            }
             
-//             return newPN; // are we missing a delete once this is over?
-//         }
+            return newPN; // are we missing a delete once this is over?
+        }
 
 //         PhysicalNumber& PhysicalNumber::operator+=(PhysicalNumber const & pn)
 //         {
