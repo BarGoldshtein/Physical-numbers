@@ -134,8 +134,8 @@ using namespace ariel;
         {
             PhysicalNumber a;
             
-            a.number=number*(-1);
-            a.unit=unit;
+//             a.number=number*(-1);
+//             a.unit=unit;
 
            
             return a;
