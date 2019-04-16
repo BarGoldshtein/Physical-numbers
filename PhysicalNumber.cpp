@@ -143,7 +143,7 @@ using namespace ariel;
         }
         PhysicalNumber& PhysicalNumber::operator--()
         {
-            this->number=this->number-1;
+           // this->number=this->number-1;
             return *this;
         }
         PhysicalNumber& PhysicalNumber::operator--(int)
