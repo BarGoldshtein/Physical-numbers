@@ -304,26 +304,26 @@ ostream& ariel::operator<<(ostream &os, const PhysicalNumber &pn){
         }
   istream& ariel::operator >>(istream &is, PhysicalNumber& pn){
  
-	    double number;
-        string str;
+// 	    double number;
+//         string str;
      
-        is>>str;
-        //  cout << endl;
-        //   cout << str;
-        //   cout << endl;
-        string delimiterStart = "[";
-        string token = str.substr(0, str.find(delimiterStart));
-            // cout << str.find("[");
-            //  cout << "testestestestestsetestestestesatasertkasdoptkasdpotkaesptkaseopktpoaskdotaskpodrtkasopdktopask\n";
-            //  cout << "this is token " <<token << endl;
-        number= stod(token);
-            //  cout << "testestestestestsetestestestesatasertkasdoptkasdpotkaesptkaseopktpoaskdotaskpodrtkasopdktopask";
-        string delimiterEnd = "]";
-            //  cout << "testestestestestsetestestestesatasertkasdoptkasdpotkaesptkaseopktpoaskdotaskpodrtkasopdktopask";
-        //cout<<str.find(delimiterEnd)-1;
-        int count =str.find(delimiterEnd)-str.find(delimiterStart)-1;
+//         is>>str;
+//         //  cout << endl;
+//         //   cout << str;
+//         //   cout << endl;
+//         string delimiterStart = "[";
+//         string token = str.substr(0, str.find(delimiterStart));
+//             // cout << str.find("[");
+//             //  cout << "testestestestestsetestestestesatasertkasdoptkasdpotkaesptkaseopktpoaskdotaskpodrtkasopdktopask\n";
+//             //  cout << "this is token " <<token << endl;
+//         number= stod(token);
+//             //  cout << "testestestestestsetestestestesatasertkasdoptkasdpotkaesptkaseopktpoaskdotaskpodrtkasopdktopask";
+//         string delimiterEnd = "]";
+//             //  cout << "testestestestestsetestestestesatasertkasdoptkasdpotkaesptkaseopktpoaskdotaskpodrtkasopdktopask";
+//         //cout<<str.find(delimiterEnd)-1;
+//         int count =str.find(delimiterEnd)-str.find(delimiterStart)-1;
 
-        string t = str.substr(str.find(delimiterStart)+1,count);
+//         string t = str.substr(str.find(delimiterStart)+1,count);
 
         // cout << "this is t " <<t;
 //         if (t=="cm") { pn.unit.type=Unit::CM ; pn.number=number;}
