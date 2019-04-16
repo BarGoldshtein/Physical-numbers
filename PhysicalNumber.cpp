@@ -12,8 +12,8 @@ using namespace ariel;
         PhysicalNumber::PhysicalNumber()
         {
             
-            number = 0;
-            unit.type = Unit::KM;
+       //     number = 0;
+           // unit.type = Unit::KM;
         }
         PhysicalNumber::PhysicalNumber(double number,Unit::Type type) // unit is object of Unit.h class
         {
