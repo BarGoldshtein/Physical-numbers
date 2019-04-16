@@ -265,28 +265,28 @@ using namespace ariel;
 
    PhysicalNumber PhysicalNumber::convert(const PhysicalNumber &pn) const
     {
-            // need to do isSame()?
-        PhysicalNumber newPN;
-        double pnNumber = pn.number;
-        newPN.unit=unit;
-        Unit::Type temp = pn.unit.type;
-        Unit::Type type = unit.type;
-        switch (type)
-        {
-            case Unit::SEC: if(temp == Unit::MIN) {newPN.number=pnNumber*60;} else if(temp==Unit::HOUR) {newPN.number=pnNumber*3600;} break;
-            case Unit::MIN: if(temp == Unit::HOUR) {newPN.number=pnNumber*60;} else if(temp==Unit::SEC) {newPN.number=pnNumber/60;} break;
-            case Unit::HOUR: if(temp == Unit::MIN) {newPN.number=pnNumber/60;} else if(temp==Unit::SEC) {newPN.number=pnNumber/3600;} break;
+//             // need to do isSame()?
+         PhysicalNumber newPN;
+//         double pnNumber = pn.number;
+//         newPN.unit=unit;
+//         Unit::Type temp = pn.unit.type;
+//         Unit::Type type = unit.type;
+//         switch (type)
+//         {
+//             case Unit::SEC: if(temp == Unit::MIN) {newPN.number=pnNumber*60;} else if(temp==Unit::HOUR) {newPN.number=pnNumber*3600;} break;
+//             case Unit::MIN: if(temp == Unit::HOUR) {newPN.number=pnNumber*60;} else if(temp==Unit::SEC) {newPN.number=pnNumber/60;} break;
+//             case Unit::HOUR: if(temp == Unit::MIN) {newPN.number=pnNumber/60;} else if(temp==Unit::SEC) {newPN.number=pnNumber/3600;} break;
 
-            case Unit::CM: if(temp == Unit::M) {newPN.number=pnNumber*100;} else if(temp==Unit::KM) {newPN.number=pnNumber*100000;} break;
-            case Unit::M: if(temp == Unit::CM) {newPN.number=pnNumber/100;} else if(temp==Unit::KM) {newPN.number=pnNumber*1000;} break;
-            case Unit::KM: if(temp == Unit::M) {newPN.number=pnNumber/1000;} else if(temp==Unit::CM) {newPN.number=pnNumber/100000;} break;
+//             case Unit::CM: if(temp == Unit::M) {newPN.number=pnNumber*100;} else if(temp==Unit::KM) {newPN.number=pnNumber*100000;} break;
+//             case Unit::M: if(temp == Unit::CM) {newPN.number=pnNumber/100;} else if(temp==Unit::KM) {newPN.number=pnNumber*1000;} break;
+//             case Unit::KM: if(temp == Unit::M) {newPN.number=pnNumber/1000;} else if(temp==Unit::CM) {newPN.number=pnNumber/100000;} break;
 
-            case Unit::G: if(temp == Unit::KG) {newPN.number=pnNumber*1000;} else if(temp==Unit::TON) {newPN.number=pnNumber*100000;} break;
-            case Unit::KG: if(temp == Unit::G) {newPN.number=pnNumber/1000;} else if(temp==Unit::TON) {newPN.number=pnNumber*1000;} break;
-            case Unit::TON: if(temp == Unit::G) {newPN.number=pnNumber/100000;} else if(temp==Unit::KG) {newPN.number=pnNumber/1000;} break;
+//             case Unit::G: if(temp == Unit::KG) {newPN.number=pnNumber*1000;} else if(temp==Unit::TON) {newPN.number=pnNumber*100000;} break;
+//             case Unit::KG: if(temp == Unit::G) {newPN.number=pnNumber/1000;} else if(temp==Unit::TON) {newPN.number=pnNumber*1000;} break;
+//             case Unit::TON: if(temp == Unit::G) {newPN.number=pnNumber/100000;} else if(temp==Unit::KG) {newPN.number=pnNumber/1000;} break;
 
-            default: throw "error in switch (at PhysicalNumber.cpp)";
-        }
+//             default: throw "error in switch (at PhysicalNumber.cpp)";
+//         }
         return newPN;
     }
 ostream& ariel::operator<<(ostream &os, const PhysicalNumber &pn){
