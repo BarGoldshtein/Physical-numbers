@@ -149,8 +149,8 @@ using namespace ariel;
         PhysicalNumber& PhysicalNumber::operator--(int)
         {
             PhysicalNumber q;
-            q.number=number-1;
-            q.unit=unit;
+//             q.number=number-1;
+//             q.unit=unit;
             
             return q;
         }
