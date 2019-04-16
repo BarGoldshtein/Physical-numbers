@@ -247,7 +247,7 @@ using namespace ariel;
         }
         bool  PhysicalNumber::operator!=(const PhysicalNumber& pn) const
         {
-//                  bool test=false;
+                 bool test=false;
 //             if(unit.isSame(pn.unit))
 //             {
 //                 if(this->number!=pn.number)
