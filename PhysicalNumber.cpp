@@ -17,8 +17,8 @@ using namespace ariel;
         }
         PhysicalNumber::PhysicalNumber(double number,Unit::Type type) // unit is object of Unit.h class
         {
-            if (number < 0) 
-            throw "exception at constructor, number cant be < 0";
+//             if (number < 0) 
+//             throw "exception at constructor, number cant be < 0";
             this->number=number;
             this->unit.type=type;
             
