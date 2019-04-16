@@ -114,20 +114,20 @@ using namespace ariel;
         }
         PhysicalNumber& PhysicalNumber::operator-=(const PhysicalNumber& pn) 
         {
-              PhysicalNumber newPN;
-           if (unit.isSame(pn.unit))
-           {
-               number-=pn.number;
-           }
-           else if (unit.isSameGroup(pn.unit))
-           {
-               newPN=convert(pn);
-               number-=newPN.number;
-           }
-           else
-           {
-               throw "units are not the same dimensions in -= function";
-           }
+//               PhysicalNumber newPN;
+//            if (unit.isSame(pn.unit))
+//            {
+//                number-=pn.number;
+//            }
+//            else if (unit.isSameGroup(pn.unit))
+//            {
+//                newPN=convert(pn);
+//                number-=newPN.number;
+//            }
+//            else
+//            {
+//                throw "units are not the same dimensions in -= function";
+//            }
            return *this;
         }
         PhysicalNumber PhysicalNumber::operator-() const
