@@ -82,7 +82,7 @@ using namespace ariel;
 
         PhysicalNumber& PhysicalNumber::operator++()
         {
-            number++;
+           // number++;
             return *this;
         }
         PhysicalNumber &PhysicalNumber::operator++(int) 
