@@ -289,7 +289,7 @@ using namespace ariel;
         }
         return newPN;
     }
-// ostream& ariel::operator<<(ostream &os, const PhysicalNumber &pn){
+ostream& ariel::operator<<(ostream &os, const PhysicalNumber &pn){
 //             switch (pn.unit.type){
 //                 case Unit::KM: return os << pn.number << "[km]";
 //                 case Unit::CM: return os << pn.number << "[cm]";
@@ -301,7 +301,7 @@ using namespace ariel;
 //                 case Unit::KG: return os << pn.number << "[kg]";
 //                 case Unit::TON: return os << pn.number << "[ton]";
 //             }
-//         }
+        }
   istream& ariel::operator >>(istream &is, PhysicalNumber& pn){
  
 	    double number;
