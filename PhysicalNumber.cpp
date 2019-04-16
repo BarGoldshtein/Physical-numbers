@@ -55,8 +55,8 @@ using namespace ariel;
             return newPN; // are we missing a delete once this is over?
         }
 
-//         PhysicalNumber& PhysicalNumber::operator+=(PhysicalNumber const & pn)
-//         {
+        PhysicalNumber& PhysicalNumber::operator+=(PhysicalNumber const & pn)
+         {
 //             PhysicalNumber newPN;
 //            if (unit.isSame(pn.unit))
 //            {
