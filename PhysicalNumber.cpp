@@ -326,16 +326,16 @@ ostream& ariel::operator<<(ostream &os, const PhysicalNumber &pn){
         string t = str.substr(str.find(delimiterStart)+1,count);
 
         // cout << "this is t " <<t;
-        if (t=="cm") { pn.unit.type=Unit::CM ; pn.number=number;}
-        if (t=="m") { pn.unit.type=Unit::M ; pn.number=number;}
-        if (t=="km") { pn.unit.type=Unit::KM ; pn.number=number;}
-        if (t=="g") { pn.unit.type=Unit::G ; pn.number=number;}
-        if (t=="kg") { pn.unit.type=Unit::KG ; pn.number=number;}
-        if (t=="ton") { pn.unit.type=Unit::TON ; pn.number=number;}
-        if (t=="sec") { pn.unit.type=Unit::SEC ; pn.number=number;}
-        if (t=="min") { pn.unit.type=Unit::MIN ; pn.number=number;}
-        if (t=="hour") { pn.unit.type=Unit::HOUR ; pn.number=number;}
-        cout << endl;
+//         if (t=="cm") { pn.unit.type=Unit::CM ; pn.number=number;}
+//         if (t=="m") { pn.unit.type=Unit::M ; pn.number=number;}
+//         if (t=="km") { pn.unit.type=Unit::KM ; pn.number=number;}
+//         if (t=="g") { pn.unit.type=Unit::G ; pn.number=number;}
+//         if (t=="kg") { pn.unit.type=Unit::KG ; pn.number=number;}
+//         if (t=="ton") { pn.unit.type=Unit::TON ; pn.number=number;}
+//         if (t=="sec") { pn.unit.type=Unit::SEC ; pn.number=number;}
+//         if (t=="min") { pn.unit.type=Unit::MIN ; pn.number=number;}
+//         if (t=="hour") { pn.unit.type=Unit::HOUR ; pn.number=number;}
+//         cout << endl;
         return is;
 
         }
