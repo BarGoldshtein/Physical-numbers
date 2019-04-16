@@ -289,19 +289,19 @@ using namespace ariel;
         }
         return newPN;
     }
-ostream& ariel::operator<<(ostream &os, const PhysicalNumber &pn){
-            switch (pn.unit.type){
-                case Unit::KM: return os << pn.number << "[km]";
-                case Unit::CM: return os << pn.number << "[cm]";
-                case Unit::M: return os << pn.number << "[m]";
-                case Unit::SEC: return os << pn.number << "[sec]";
-                case Unit::MIN: return os << pn.number << "[min]";
-                case Unit::HOUR: return os << pn.number << "[hour]";
-                case Unit::G: return os << pn.number << "[g]";
-                case Unit::KG: return os << pn.number << "[kg]";
-                case Unit::TON: return os << pn.number << "[ton]";
-            }
-        }
+// ostream& ariel::operator<<(ostream &os, const PhysicalNumber &pn){
+//             switch (pn.unit.type){
+//                 case Unit::KM: return os << pn.number << "[km]";
+//                 case Unit::CM: return os << pn.number << "[cm]";
+//                 case Unit::M: return os << pn.number << "[m]";
+//                 case Unit::SEC: return os << pn.number << "[sec]";
+//                 case Unit::MIN: return os << pn.number << "[min]";
+//                 case Unit::HOUR: return os << pn.number << "[hour]";
+//                 case Unit::G: return os << pn.number << "[g]";
+//                 case Unit::KG: return os << pn.number << "[kg]";
+//                 case Unit::TON: return os << pn.number << "[ton]";
+//             }
+//         }
   istream& ariel::operator >>(istream &is, PhysicalNumber& pn){
  
 	    double number;
