@@ -1,2 +1,2 @@
-An implement for physical numbers in c++ 
+An implement for Physical numbers in c++ 
 made for university assignment
